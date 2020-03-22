@@ -18,20 +18,36 @@
       <nav id="navbar" class="navbar">
         <i class="fas fa-bars" id="openNav"></i>
         <ul class="navbar-list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="#"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-info"></i>About</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-clipboard-list"></i>Services</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-phone"></i>Contact</a>
+          </li>
         </ul>
       </nav>
 
       <nav class="small-nav" id="small-nav">
         <i class="fas fa-times" id="closeNav"></i>
         <ul class="small-nav-list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="#"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-info"></i>About</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-clipboard-list"></i>Services</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-phone"></i>Contact</a>
+          </li>
         </ul>
       </nav>
 
@@ -64,6 +80,104 @@
         </nav>
       </section>
     </header>
+
+    <!-- Main Card Section -->
+    <section class="card-container">
+      <div class="cards active" id="workwear-cards">
+        <article>
+          <h3>Workwear 1</h3>
+          <img src="./img/placeholder.png" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
+            aliquid neque minus?
+          </p>
+        </article>
+        <article>
+          <h3>Workwear 2</h3>
+          <img src="./img/placeholder.png" alt="" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus cumque cum impedit!
+          </p>
+        </article>
+      </div>
+      <div class="cards" id="schoolwear-cards">
+        <article>
+          <h3>Schoolwear 1</h3>
+          <img src="./img/placeholder.png" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
+            aliquid neque minus?
+          </p>
+        </article>
+        <article>
+          <h3>Schoolwear 2</h3>
+          <img src="./img/placeholder.png" alt="" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus cumque cum impedit!
+          </p>
+        </article>
+      </div>
+      <div class="cards" id="teamwear-cards">
+        <article>
+          <h3>Teamwear 1</h3>
+          <img src="./img/placeholder.png" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
+            aliquid neque minus?
+          </p>
+        </article>
+        <article>
+          <h3>Teamwear 2</h3>
+          <img src="./img/placeholder.png" alt="" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus cumque cum impedit!
+          </p>
+        </article>
+      </div>
+      <div class="cards" id="customz-cards">
+        <article>
+          <h3>Customz 1</h3>
+          <img src="./img/placeholder.png" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
+            aliquid neque minus?
+          </p>
+        </article>
+        <article>
+          <h3>Customz 2</h3>
+          <img src="./img/placeholder.png" alt="" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus cumque cum impedit!
+          </p>
+        </article>
+      </div>
+      <aside class="tab-container">
+        <ul class="tabs">
+          <li
+            class="active vertical-tab"
+            id="workwear-tab"
+            href="#workwear-cards"
+          >
+            Workwear
+          </li>
+
+          <li class="vertical-tab" id="teamwear-tab" href="#teamwear-cards">
+            Teamwear
+          </li>
+
+          <li class="vertical-tab" id="schoolwear-tab" href="#schoolwear-cards">
+            Schoolwear
+          </li>
+          <li class="vertical-tab" id="customz-tab" href="#customz-cards">
+            Customz
+          </li>
+        </ul>
+      </aside>
+    </section>
 
     <script src="./app.js"></script>
   </body>

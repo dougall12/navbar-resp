@@ -34,12 +34,19 @@ nav.navbar i.fas.fa-bars {
 
 ul.navbar-list {
   display: flex;
-  width: 100%;
-  align-items: flex-end;
+  margin-left: auto;
+  justify-content: space-between;
+  width: 50%;
 }
 
 ul.navbar-list li {
   list-style-type: none;
+}
+
+ul.navbar-list i,
+ul.small-nav-list li i {
+  color: var(--main-yellow);
+  padding-right: 5px;
 }
 
 ul li a {
@@ -91,6 +98,8 @@ nav.small-nav ul {
 nav.small-nav ul li {
   list-style-type: none;
 }
+
+/* Media Query */
 
 @media (max-width: 568px) {
   nav.navbar i.fas.fa-bars {
@@ -161,4 +170,75 @@ ul.range-links {
 ul.range-links li {
   list-style-type: none;
   font-size: 1.8rem;
+}
+
+/* Main Content */
+
+/* Card Section */
+
+section.card-container {
+  display: flex;
+  align-items: center;
+}
+
+div.cards.active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding-top: 45px;
+}
+
+div.cards article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: var(--main-yellow) 5px 5px 10px 2px;
+}
+
+div.cards article p {
+  text-align: center;
+}
+
+div.cards article img {
+  width: 400px;
+}
+
+div.cards {
+  display: none;
+}
+
+/* Tab Section */
+
+aside.tab-container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+aside.tab-container ul li {
+  list-style-type: none;
+  height: 100%;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  border: black 1px solid;
+  border-radius: 10px;
+  background-color: var(--main-yellow);
+  font-weight: bold;
+}
+
+aside.tab-container ul li:hover {
+  color: var(--fp);
+  border: 1px solid var(--fp);
+  opacity: 0.8;
+}
+
+aside.tab-container ul li.active {
+  color: var(--fp);
+  border: 1px solid var(--fp);
+  background-color: #fff;
 }
